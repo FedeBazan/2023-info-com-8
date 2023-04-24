@@ -10,3 +10,19 @@ Peso: [peso] kg
 Dirección: [dirección]
 Número de teléfono: [número de teléfono]'''
 
+nombre=input('Ingrese nombre completo: ')
+edad=int(input('Ingrese edad: '))
+estatura=int(input('Ingerese estatura en cm: '))
+peso=round(float(input('Ingrese peso en Kg: ')),2)
+direccion=input('Ingrese direccion: ')
+numero=input('Ingrese numero de telefono/celular: ')
+
+print(f'''---REGISTRO DE DATOS---
+Nombre:{nombre}
+Edad:{edad}
+Estatura:{estatura} Cm.
+Peso:{peso} Kg.
+Direccion:{direccion}
+Numero:{numero}
+---------------------------------
+''')
