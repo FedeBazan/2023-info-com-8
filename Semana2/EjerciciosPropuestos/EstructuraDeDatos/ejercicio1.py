@@ -4,5 +4,6 @@ mostrar el diccionario completo.
 verduras={'Tomate':600,'Papa':200,'Zanahoria':250}
 print('Precios de Verduras por Kilo:')
 
+#Mostrar datos por FOR
 for verdura,precio in verduras.items():
     print(f'Verdura:{verdura} Precio(kg.):{precio}')
