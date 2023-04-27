@@ -7,7 +7,12 @@ pedir los nombres de 3 paises al usuario y mostrar la lista ordenada
 '''
 paises=[]
 for i in range(3):
-    pais=capitalize(input('Ingresa nombre del Pais: '))
-    #capitalize(): esta funcion permite Trnsformar la primera letra en MAYUS
+    pais=input('Ingresa nombre del Pais: ')
     paises.append(pais)
-for pais in paises
+print('Lista desordenanada:',end=' ')
+for pais in paises:
+    print(pais,end=' ')
+paises.sort()
+print('\nLista ordenada:',end=' ')
+for pais in paises:
+    print(pais,end=' ')
