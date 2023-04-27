@@ -7,4 +7,5 @@ Supongamos que pi = 3.1416
 PI=3.1416
 
 radio=float(input('Ingrese el radio del circulo: '))
-print (f'El area del circulo es : {round(PI*radio*radio,2)}')
+#print(f'{round(radio)}') al no poner parametro para redondear decimales el valor de radio solo tomara la parte entera
+print (f'El area del circulo es : {round(PI*radio*radio)}')
