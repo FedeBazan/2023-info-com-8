@@ -14,7 +14,6 @@ while len(letras)<3:
         if len(letra)==1 and bandera==1:
             letras.add(letra)
             bandera=0
-            continue
         #discrimina la letra si es una palabra o si esta repetida
         if len(letra)==1 and (not letra in letras):
             letras.add(letra)
