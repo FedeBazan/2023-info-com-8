@@ -3,3 +3,7 @@
 100.
 
 '''
+sum=0
+for i in range(1,101):
+    sum+=i
+print(f'Suma de los 100 primeros numeros: {sum}')
