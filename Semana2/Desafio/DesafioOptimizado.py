@@ -1,7 +1,5 @@
 texto = input('Ingrese un texto:\n')
 letras = []
-contadorLetra = 0
-contadorPalabra = texto.split()
 indice = -1
 bandera2 = 0
 
@@ -11,10 +9,9 @@ while len(letras) < 3:
         letras.append(letra)
 
 for letra in letras:
-    contadorLetra = texto.count(letra)
-    print(f'La letra {letra} apareció {contadorLetra} veces.')
+    print(f'La letra {letra} apareció {texto.count(letra)} veces.')
 
-print(f'La cantidad de palabras escritas fue de {len(contadorPalabra)}')
+print(f'La cantidad de palabras escritas fue de {len(texto.split())}')
 print(f'La primera letra es: {texto[0]}\nLa última letra es: {texto[-1]}')
 print(''.join(reversed(texto)))
 
