@@ -1,7 +1,5 @@
 texto = input('Ingrese un texto:\n')
 letras = []
-indice = -1
-bandera2 = 0
 
 while len(letras) < 3:
     letra = input('Ingrese una letra: ')
