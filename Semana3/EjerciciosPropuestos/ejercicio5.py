@@ -3,7 +3,7 @@
 100.
 
 '''
-sum=0
-for i in range(1,101):
-    sum+=i
-print(f'Suma de los 100 primeros numeros: {sum}')
+sum = 0
+for i in range(2, 101, 2):
+    sum += i
+print(f"La suma de los números pares del 1 al 100 es: {sum}")

@@ -3,10 +3,11 @@
 la misma cadena pero con todas las vocales en mayúscula.
 
 '''
-texto=input('Ingrese un texto: ')
-vocales=['a','e','i','o','u']
-indice=0
+texto = input('Ingrese un texto: ')
+vocales = ['a', 'e', 'i', 'o', 'u']
+texto_modificado = ''
 
 for letra in texto:
-    print(texto[indice].upper(),end='') if (letra in vocales) else print(texto[indice],end='')
-    indice+=1
+    texto_modificado += letra.upper() if letra in vocales else letra
+
+print(texto_modificado)
