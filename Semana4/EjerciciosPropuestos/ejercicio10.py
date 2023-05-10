@@ -5,7 +5,9 @@ entero positivo n se define como el producto de todos los números enteros
 positivos desde 1 hasta n.'''
 
 def calcular_factorial(numero):
-    continue
-
+    fac=1
+    for i in range(1,numero+1):
+        fac*=i
+    return fac
 numero=int(input('Coloque un numero para obtener el factorial del mismo: '))
-calcular_factorial(numero)
+print(f'El factorial de \"{numero}\" es \"{calcular_factorial(numero)}\"')

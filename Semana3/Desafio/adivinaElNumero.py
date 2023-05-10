@@ -18,7 +18,6 @@ while intentos_realizados < intentos_maximos:
         
     if not numero_ingresado.isdigit():
         print("Lo siento, eso no es un número entero válido. Por favor intenta de nuevo.")
-        intentos_realizados += 1
         continue
         
     numero_ingresado = int(numero_ingresado)
@@ -28,9 +27,9 @@ while intentos_realizados < intentos_maximos:
         break
     
     if numero_ingresado < numero:
-        print(f"El número que estoy pensando es mayor que {numero_ingresado}.")
+        print("El número que estoy pensando es MAYOR que el que ingresaste.")
     else:
-        print(f"El número que estoy pensando es menor que {numero_ingresado}.")
+        print("El número que estoy pensando es MENOR que el que ingresaste.")
         
     intentos_realizados += 1
     
