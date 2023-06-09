@@ -39,7 +39,7 @@ def validar_lados(lados):
         if not es_float(lado) or float(lado) <= 0:
             return False
     return True
-
+ 
 # Función para obtener los lados del triángulo del usuario
 def ingresar_lados():
     lados_validos = False
