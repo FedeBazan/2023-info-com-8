@@ -74,33 +74,3 @@ prueba = PruebaTiempo()
 prueba.mostrar_tiempo()  # Mostrar la hora inicial
 prueba.modificar_tiempo()  # Modificar la hora
 prueba.mostrar_tiempo()  # Mostrar la hora modificada
-}
-
-_date ='201909010900'
-regex = re.compile("[1-2][0,9][0-9]{2}[0,1][0-9][0,1,2,3][0-9][0,1,2][0-9][0-5][0-9][0-5][0-9]")
-_date = re.findall(regex, _date)
-print(_date)
-match = re.match(regex, _date[0])
-if (match):
-     print(_date)
-else:
-    regex = re.compile("[1-2][0,9][0-9]{2}[0,1][0-9][0,1,2,3][0-9][0,1,2][0-9]")    
-    _date = re.findall(regex, _date)
-    match= re.match(regex,_date[0]) 
-if (match):
-    print(_date)
-else: 
-    regex = re.compile("[1-2][0,9][0-9]{2}[0,1][0-9][0,1,2,3][0-9][0,1,2][0-9][0-5][0-9]")
-    _date = re.findall(regex, _date)
-    match= re.match(regex,_date[0])
-    
-if (match):
-    print(_date)        
-else: 
-    regex = re.compile("[1-2][0,9][0-9]{2}[0,1][0-9][0,1,2,3][0-9][0,1,2][0-9][0-5][0-9][0-5][0-9]")
-    _date = re.findall(regex, _date)
-    match= re.match(regex,_date[0])
-if (match):
-    print(_date)
-else: 
-    print("Invalid date, the format has to be YYYYMMDDHHMMSS or YYYYMMDD or YYYYMMDDHHMM or YYYYMMDDHH")
