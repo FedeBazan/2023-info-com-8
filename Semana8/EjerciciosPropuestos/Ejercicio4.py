@@ -9,7 +9,6 @@ prueba una hora concreta y la modifique a su gusto mostrándola por pantalla.
 
 '''
 import datetime
-import re
 
 '''
 class Tiempo:
