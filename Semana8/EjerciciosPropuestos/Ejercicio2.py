@@ -8,3 +8,31 @@ atributos.
 concuerde con el valor del argumento. También debe mostrar un mensaje "Se han encontrado {} vehículos con {} ruedas:" únicamente si se envía el
 argumento ruedas. Ponla a prueba con 0, 2 y 4 ruedas como valor.
 '''
+
+from Ejercicio1 import *
+
+class Camioneta(Coche):
+    def __init__(self, color, ruedas, velocidad, cilindrada,carga):
+        super().__init__(color, ruedas, velocidad, cilindrada)
+        self.carga=carga
+
+    def __str__(self):
+        return f'{super().__str__()}\nCarga: {self.carga} Kg. '
+
+class Bicicleta(Vehiculo):
+    def __init__(self, color, ruedas,tipo):
+        super().__init__(color, ruedas)
+        self.tipo=tipo
+
+class Motocicleta(Bicicleta):
+    def __init__(self, color, ruedas, tipo,velocidad,cilindrada):
+        super().__init__(color, ruedas, tipo)
+        self.velocidad=velocidad
+        self.cilindrada=cilindrada
+
+if __name__ == '__main__':
+    carro=Vehiculo('Negro',6)
+    volkwagen=Coche('Verde',4,220,400)
+    mercedez=Camioneta('Morado',4,200,250,200)
+    bmx=Bicicleta('Gris',2,'Montaña')
+    rx=Motocicleta('NEgro/Rojo',2,'Pistera',320,1200)
