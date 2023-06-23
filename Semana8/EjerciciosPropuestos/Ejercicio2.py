@@ -36,3 +36,15 @@ if __name__ == '__main__':
     mercedez=Camioneta('Morado',4,200,250,200)
     bmx=Bicicleta('Gris',2,'Montaña')
     rx=Motocicleta('NEgro/Rojo',2,'Pistera',320,1200)
+    
+    def catalogar(vehiculos,num_ruedas):
+        num_coincidencia=0
+        for rodado in vehiculos:
+            print('----------')
+            print(rodado)
+            if rodado.ruedas==num_ruedas:
+                num_coincidencia+=1
+        print (f'Se han encontrado {num_coincidencia} vehículos con {num_ruedas} ruedas:')
+    vehiculos=(carro,volkwagen,mercedez,bmx,rx)
+    num_ruedas=int(input('Coloque el numero de ruedas para analizar: '))
+    catalogar(vehiculos,num_ruedas)

@@ -10,27 +10,7 @@ prueba una hora concreta y la modifique a su gusto mostrándola por pantalla.
 '''
 import datetime
 
-'''
-class Tiempo:
-    def __init__(self, hora, minuto=0, segundo=0):
-        self.__hora = hora
-        self.__minuto = minuto
-        self.__segundo = segundo
 
-    def modificar_hora(self, hora, minuto=0, segundo=0):
-        self.__hora = hora
-        self.__minuto = minuto
-        self.__segundo = segundo
-
-    def obtener_hora(self):
-        return self.__hora
-
-    def obtener_minuto(self):
-        return self.__minuto
-
-    def obtener_segundo(self):
-        return self.__segundo
-'''
 
 class PruebaTiempo:
     def __init__(self):
