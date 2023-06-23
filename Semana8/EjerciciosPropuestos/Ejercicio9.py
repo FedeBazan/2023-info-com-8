@@ -12,3 +12,4 @@ Luego desarrollar los siguientes métodos:
     *vaciarCafetera(): pone la cantidad de café actual en cero.
     *agregarCafe(int): añade a la cafetera la cantidad de café indicada.
 '''
+
