@@ -1,7 +1,7 @@
 '''
 Ejercicio 6: Cuentas Electrónicas
 
-Crea una clase llamada que tendrá los siguientes atributos: titular(que es una persona)
+Crea una clase llamada CUENTA que tendrá los siguientes atributos: titular(que es una persona)
 y cantidad (puede tener decimales). Ek titukar será obligatoria y la cantidad es opcional.
 Implementa los siguientes métodos:
     *nostrar():Muestra los datos de la cuenta.
@@ -34,7 +34,7 @@ titular=input('Ingrese el nombre del titular de la cuenta: ')
 efectivo=float(input('Ingrese la cantidad de efectivo en la cuenta: '))
 cliente=Cuenta(titular,efectivo)
 print(''.center(50,'='))
-print(cliente)
+print(cliente) # cliente.mostrar_datos()
 print('MENU'.center(50,'='))
 opc=0
 while opc!=3:

@@ -37,6 +37,7 @@ class Perecedero(Producto):
     
     def __str__(self):
         return f'{super().__str__()} \nDIAS A CADUCAR: {self.dias_a_caducar} días'
+        #return f'NOMBRE DEL PRODUCTO: {self.nombre}\nCANTIDAD: {self.cantidad}\nDIAS A CADUCAR: {self.dias_a_caducar} días'
     
 class No_Perecedero(Producto):
     def __init__(self, nombre, cantidad,tipo):
@@ -51,7 +52,7 @@ def calcular(cantidad,entidades):
     if cantidad%entidades > 0:
         print(f'Sobran {cantidad%entidades} productos, se almacenarán para la proxima donacion')
         
-def calcular_perecederos(cantidad,entidades,dias):
+def calcular_perecederos(cantidad,entidades):
     calcular(cantidad,entidades)
     if dias<10:
         print (f'La entrega debe hacerce HOY.')
