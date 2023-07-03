@@ -110,4 +110,4 @@ print("Precio total de las bebidas de la marca Coca-Cola:", almacen.calcular_pre
 almacen.eliminar_bebida(1)
 almacen.mostrar_informacion()
 
-'''
+''' 
